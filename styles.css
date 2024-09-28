@@ -1,0 +1,179 @@
+#fundo {
+    background-image: url('img/fundo.png'); /* Caminho para a imagem */
+    background-size: 500px; 
+    background-position: center; 
+    background-repeat: repeat; 
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ebcdff; /* Fundo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#manual-page {
+    background-color: #f0f0f0 !important; 
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px; /* Cantos arredondados */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3); /* Sombra mais suave */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 3em; /* Tamanho maior */
+    color: #4d077b; /* Cor verde escuro */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra no texto */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaço entre os botões */
+}
+
+.button {
+    padding: 15px 30px;
+    background-color: #4d077b; /* Cor verde */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px; /* Cantos arredondados */
+    transition: background-color 0.3s;
+    font-size: 1.2em; /* Tamanho do texto do botão */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra do botão */
+}
+
+.button:hover {
+    background-color: #44066d; /* Verde mais escuro */
+}
+
+/* Estilos do placar */
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto; /* Centralizar com margem */
+}
+
+.team {
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    margin: 0 10px;
+    border: 5px solid #ccc; /* Borda suave */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.red {
+    border-color: #ff6347; /* Bordas vermelhas */
+    background-color: rgb(255, 230, 230); /* Fundo transparente */
+}
+
+.blue {
+    border-color: #2ab347; /* Bordas azuis */
+    background-color: rgb(218, 255, 212); /* Fundo transparente */
+}
+
+.score {
+    font-size: 4em;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reset {
+    background-color: #ff00b3fa; /* Laranja */
+    color: #fff;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+button:nth-of-type(1) {
+    background-color: #32CD32; /* Verde */
+}
+
+button:nth-of-type(2) {
+    background-color: #FFD700; /* Amarelo */
+}
+
+button.finalizar {
+    background-color: #FF4500; /* Laranja */
+    color: #fff;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+.modal {
+    display: none; /* Oculta o modal por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra mais forte */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.manual-container {
+    padding: 40px;
+    text-align: center; /* Centraliza o texto */
+}
+
+@media (max-width: 600px) {
+    .scoreboard {
+        flex-direction: column; /* Coloca os times em uma coluna */
+        align-items: center; /* Centraliza os times */
+    }
+
+    .team {
+        width: 90%; /* Largura maior para dispositivos móveis */
+        margin: 10px 0; /* Margem vertical entre os times */
+    }
+}
